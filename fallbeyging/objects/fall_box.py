@@ -1,10 +1,10 @@
-import pygame as pg
+import pygame
 import re
 
-from objects.text_box import TextBox
-from objects.input_box import InputBox
+from .text_box import TextBox
+from .input_box import InputBox
 
-pg.init()
+pygame.init()
 
 # Global dimension values
 width = 100
@@ -48,7 +48,7 @@ class FallBox:
     self.score = 0
 
     # Text
-    title_font = pg.font.Font(None, 60)
+    title_font = pygame.font.Font(None, 60)
     self.title = title_font.render(word, True, (0, 0, 0))
     self.title_center = self.title.get_rect(center=(400, y))
 
@@ -75,7 +75,7 @@ class FallBox:
     sub_spacing = ' ' * 10
     sub_text = f'{sub_text_1}{sub_spacing}{sub_text_2}'
 
-    sub_title_font = pg.font.Font(None, 42)
+    sub_title_font = pygame.font.Font(None, 42)
     self.sub_title = sub_title_font.render(sub_text, True, (0, 0, 0))
     self.sub_title_center = self.sub_title.get_rect(center=(400, y+50))
 
