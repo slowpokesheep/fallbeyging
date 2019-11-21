@@ -4,14 +4,20 @@ This project is a game to train in icelandic declension. It includes **41.277** 
 
 ![](doc/preview.gif)
 
+
 ## Install
 
+* python 3 is needed to run this game
+* Required packages
+  * `pygame`
+
 ```
-pip install fallbeyging
+pip3 install fallbeyging
 ```
 
 ```
 git clone https://github.com/slowpokesheep/fallbeyging.git
+pip3 install pygame
 ```
 
 ## Play
@@ -21,7 +27,7 @@ Pip package comes with a CLI command that launces the game
 fallbeyging
 ```
 
-Cloning the repo, the game can be launched by runinng the following command
+If the repository was cloned, the game can be launched by runinng the following command, where **fallbeyging** is the directory
 ```
 python3 fallbeyging
 ```
