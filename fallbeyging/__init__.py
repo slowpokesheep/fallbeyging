@@ -1,4 +1,4 @@
-from .fallbeyging import main
+from .game import main
 
 def run():
   """Run the main game loop """
